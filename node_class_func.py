@@ -29,12 +29,6 @@ def search(root, key):
         return search(root.left, key)
     return search(root.right, key)
 
-def min_value_node(node):
-    current = node
-    while current.left:
-        current = current.left
-    return current
-
 def delete(root, key):
     if not root:
         return root
