@@ -1,3 +1,5 @@
+from task1 import min_node_val
+
 class Node:
     def __init__(self, key):
         self.left = None
@@ -46,7 +48,7 @@ def delete(root, key):
             temp = root.left
             root = None
             return temp
-        root.val = min_value_node(root.right).val
+        root.val = min_node_val(root.right).val
         root.right = delete(root.right, root.val)
     return root
 
