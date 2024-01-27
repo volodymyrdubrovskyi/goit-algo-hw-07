@@ -1,6 +1,6 @@
-import node_class_func
+from node_class_func import Node
 
-def sum_node_val(node: node_class_func.Node):
+def sum_node_val(node: Node):
     summa = node.val
     if node.left:
         summa += sum_node_val(node.left)
